@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    
+    stages {
 
         stage('Install Dependencies') {
             steps {
@@ -20,5 +20,6 @@ pipeline {
                 bat 'type metrics.json'
             }
         }
+
     }
 }
