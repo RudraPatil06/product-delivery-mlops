@@ -44,7 +44,7 @@ preprocessor = ColumnTransformer(
 )
 
 # Model
-RandomForestRegressor(n_estimators=10, random_state=42)
+model=RandomForestRegressor(n_estimators=10, random_state=42)
 
 # Pipeline
 pipeline = Pipeline(steps=[
