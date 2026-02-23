@@ -1,13 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/devsawant66/product-delivery-mlops'
-            }
-        }
+    
 
         stage('Install Dependencies') {
             steps {
