@@ -2,21 +2,23 @@ pipeline {
     agent any
 
     stages {
+
         stage('Clone') {
             steps {
-                echo 'Cloning repository...'
+                checkout scm
             }
         }
 
         stage('Install Dependencies') {
             steps {
+                bat 'pip install --upgrade pip'
                 bat 'pip install -r requirements.txt'
             }
         }
 
-        stage('Test') {
+        stage('Test Model') {
             steps {
-                echo 'Running pipeline successfully!'
+                bat 'pytest -v'
             }
         }
     }
