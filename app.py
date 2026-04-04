@@ -7,7 +7,7 @@ import os
 import pandas as pd
 
 # Fix import path
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
+sys.path.append("src")
 from predict import predict_delivery_time, predict_real_world, AutoFeatureEngineer
 
 app = FastAPI(
