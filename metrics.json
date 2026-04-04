@@ -1,6 +1,6 @@
 {
-    "timestamp": "2026-03-31T09:40:59.300451",
-    "baseline_mae": 17.5,
-    "model_mae": 7.61,
-    "improvement": 9.89
+  "best_mae": 6.9306,
+  "best_model": "GradientBoosting",
+  "timestamp": "2026-04-04T15:05:25.519935",
+  "mlflow_run_id": "5fb5570760864cf39697b6ee3dfba2bc"
 }
