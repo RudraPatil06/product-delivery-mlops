@@ -16,13 +16,13 @@ pipeline {
         }
 
         stage('🧹 Clean Old Container') {
-            steps {
-                bat '''
-                docker stop %CONTAINER_NAME% 2>nul
-                docker rm %CONTAINER_NAME% 2>nul
-                '''
-            }
-        }
+    steps {
+        bat '''
+        docker stop %CONTAINER_NAME% >nul 2>&1 || exit 0
+        docker rm %CONTAINER_NAME% >nul 2>&1 || exit 0
+        '''
+    }
+}
 
         stage('📂 Check Files') {
             steps {
