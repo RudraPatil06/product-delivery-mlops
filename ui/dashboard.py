@@ -34,7 +34,7 @@ if st.sidebar.button("🔥 LIVE GPS Prediction"):
     st.sidebar.success("Demo running!")
 
 # === API ===
-API_URL = "http://localhost:8000"
+API_URL = "https://delivery-mlops.onrender.com"
 
 # === DEFAULT LOCATION BUTTON (OUTSIDE FORM) ===
 st.markdown("### 📍 Quick Location")
